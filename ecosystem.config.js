@@ -18,7 +18,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:qianduan-duanwei/pm2-node.git',
       path: '/var/www/pm2-node',
-      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.json --env production'
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
